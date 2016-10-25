@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:textcircle="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/action_bar_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:gravity="right|center_vertical"
+            android:weightSum="3">
+
+            <com.dtos.drivingstudy.ui.widget.CircleTextView
+                android:id="@+id/order_class_ctv"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                textcircle:text="约课" />
+
+            <com.dtos.drivingstudy.ui.widget.CircleTextView
+                android:id="@+id/order_exam_ctv"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                textcircle:text="约考" />
+
+            <com.dtos.drivingstudy.ui.widget.CircleTextView
+                android:id="@+id/order_today_ctv"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                textcircle:text="今日" />
+
+            <com.dtos.drivingstudy.ui.widget.CircleTextView
+                android:id="@+id/order_update_ctv"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                textcircle:text="刷新" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.dtos.drivingstudy.ui.widget.calendar.CalendarView
+        xmlns:calendarNS="http://schemas.android.com/apk/res/com.dtos.drivingstudy"
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        calendarNS:dateFormat="yyyy年MM月" />
+
+</LinearLayout>

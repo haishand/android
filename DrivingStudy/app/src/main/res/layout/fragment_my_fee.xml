@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6"
+    tools:context=".ui.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/wrap_layout">
+
+            <!-- top item -->
+            <LinearLayout
+                style="@style/top_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="top item" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+
+            <!-- middle item -->
+            <LinearLayout
+                style="@style/mid_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="middle item" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+
+            <!-- bottom item -->
+            <LinearLayout
+                style="@style/bottom_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="bottom item" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

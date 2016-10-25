@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_fee"
+            android:icon="@drawable/ic_nav_my_fee_selector"
+            android:title="我的费用" />
+        <item
+            android:id="@+id/nav_my_reservation"
+            android:icon="@drawable/ic_nav_my_reservation_selector"
+            android:title="我的预约" />
+        <item
+            android:id="@+id/nav_my_coach"
+            android:icon="@drawable/ic_nav_my_coach_selector"
+            android:title="我的教练" />
+        <item
+            android:id="@+id/nav_pre_signup"
+            android:icon="@drawable/ic_nav_pre_signup_selector"
+            android:title="预报名" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_nav_setting_selector"
+            android:title="设置" />
+    </group>
+
+</menu>
